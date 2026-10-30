@@ -1,0 +1,8 @@
+project: savantenvs/thrift
+target: FuzzRoundtripJson
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzRoundtripJson/testsuite
+cmds:
+  - cmd: /mayhem/FuzzRoundtripJson
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/thrift
+target: FuzzParseCompact
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzParseCompact/testsuite
+cmds:
+  - cmd: /mayhem/FuzzParseCompact
+    libfuzzer: true
