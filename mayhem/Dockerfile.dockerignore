@@ -1,0 +1,2 @@
+# Upstream root .dockerignore excludes .git; the image must keep git history (SPEC 6.2 item 2).
+mayhem-build/
